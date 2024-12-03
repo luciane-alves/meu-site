@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Refeição</title>
+    <link rel="stylesheet" href="avaliacao.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título da seção -->
+        <h1>Avalie a refeição:</h1>
+    
+        <!-- Botões para diferentes refeições -->
+        <div class="buttons">
+            <!-- Bloco do botão e estrelas para "Café da manhã" -->
+            <div class="button">
+                <button>Café da manhã</button>
+                <!-- Div de estrelas, com um atributo data-rating para armazenar a nota -->
+                <div class="stars" data-rating="0" onclick="rate(event)">
+                    ★★★★★
+                </div>
+            </div>
+    
+            <!-- Bloco do botão e estrelas para "Almoço" -->
+            <div class="button">
+                <button>Almoço</button>
+                <!-- Div de estrelas semelhante ao anterior -->
+                <div class="stars" data-rating="0" onclick="rate(event)">
+                    ★★★★★
+                </div>
+            </div>
+    
+            <!-- Bloco do botão e estrelas para "Lanche da tarde" -->
+            <div class="button">
+                <button>Lanche da tarde</button>
+                <div class="stars" data-rating="0" onclick="rate(event)">
+                    ★★★★★
+                </div>
+            </div>
+        </div>
+    
+        <!-- Botão para enviar a resposta -->
+        <button class="submit-button">Enviar resposta</button>
+    </div>
+    
+    <!-- Inclusão do arquivo JavaScript para a lógica -->
+    <script src="avaliacao.js"></script>
+    
+
+    
+</body>
+</html>
